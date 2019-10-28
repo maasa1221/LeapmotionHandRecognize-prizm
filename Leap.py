@@ -5,7 +5,9 @@
 # the SWIG interface file instead.
 
 
-
+install_name_tool -change /Library/Frameworks/Python.framework/Versions/2.7/Python \
+/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/libpython2.7.dylib \
+LeapPython.so
 
 
 from sys import version_info
